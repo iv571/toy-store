@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="495.0" prefWidth="439.0" style="-fx-background-image:url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mru.tsc.controller.StoreManager">
+   <center>
+     
+   </center>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="30.0" layoutY="16.0" prefHeight="360.0" prefWidth="246.0" style="-fx-background-color: #c9faff;">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="152.0" text="Search Inventory:" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" text="Serial Number" />
+                  <RadioButton mnemonicParsing="false" text="Name" />
+                  <RadioButton mnemonicParsing="false" text="Type" />
+               </children>
+               <padding>
+                  <Insets left="15.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.57" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="190.0" layoutY="65.0" text="Welcome To The Toy Store Company" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bell MT Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add Toy">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: white;" />
+            </content>
+          </Tab>
+            <Tab text="Remove Toy">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </top>
+</BorderPane>
