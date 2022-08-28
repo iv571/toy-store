@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-08T20:08:28</date>
+  <millis>1617934108439</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>mru.tsc.application.AppDriver</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>My First Log</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-08T20:09:59</date>
+  <millis>1617934199622</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>mru.tsc.application.AppDriver</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>My First Log</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-08-23T18:29:05</date>
+  <millis>1661300945948</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>mru.tsc.application.AppDriver</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>My First Log</message>
+</record>

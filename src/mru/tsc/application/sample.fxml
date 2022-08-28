@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mru.tsc.controller.StoreManager">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="44.0" prefWidth="600.0" text="Welcome To The Toy Store" textAlignment="CENTER" />
+                              <VBox layoutX="24.0" layoutY="45.0" prefHeight="301.0" prefWidth="168.0" spacing="10.0" style="-fx-background-color: #b5f8ff;">
+                                 <children>
+                                    <Label lineSpacing="10.0" text="Search Inventory:">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="sNumInp" />
+                                    <Button fx:id="sNum" mnemonicParsing="false" onAction="#sNumPressed" text="Serial Number" />
+                                    <TextField fx:id="name" />
+                                    <Button fx:id="nameBtn" lineSpacing="10.0" mnemonicParsing="false" onAction="#nameBtnPressed" text="Name " />
+                                    <TextField fx:id="type" />
+                                    <Button fx:id="typeBtn" mnemonicParsing="false" onAction="#typeBtnPressed" text="Type" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <TextArea fx:id="console" layoutX="208.0" layoutY="45.0" prefHeight="258.0" prefWidth="384.0" />
+                              <Button fx:id="buyBtn" layoutX="378.0" layoutY="316.0" mnemonicParsing="false" onAction="#buyBtnPressed" text="Buy" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Add Toy">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="20.0" text="Enter New Toy Information">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="25.0" layoutY="47.0" prefHeight="314.0" prefWidth="249.0">
+                                 <children>
+                                    <AnchorPane prefHeight="361.0" prefWidth="588.0" style="-fx-background-color: #bdfffb;" />
+                                    <Label layoutX="10.0" layoutY="8.0" prefHeight="48.0" prefWidth="103.0" text="Categories" />
+                                    <Label layoutX="11.0" layoutY="55.0" text="Serial Number" />
+                                    <Label layoutX="14.0" layoutY="93.0" text="Name" />
+                                    <Label layoutX="14.0" layoutY="128.0" text="Brand" />
+                                    <Label layoutX="14.0" layoutY="169.0" text="Price" />
+                                    <Label layoutX="2.0" layoutY="204.0" text="Available-count" />
+                                    <Label layoutX="2.0" layoutY="243.0" text="Age-Appropriate" />
+                                    <TextField fx:id="toyCount" layoutX="122.0" layoutY="199.0" />
+                                    <TextField fx:id="toyPrice" layoutX="122.0" layoutY="164.0" />
+                                    <TextField fx:id="toyBrand" layoutX="122.0" layoutY="123.0" />
+                                    <TextField fx:id="toyName" layoutX="122.0" layoutY="88.0" />
+                                    <TextField fx:id="toySn" layoutX="122.0" layoutY="50.0" prefHeight="31.0" prefWidth="187.0" />
+                                    <TextField fx:id="toyAgeAppropriate" layoutX="122.0" layoutY="238.0" />
+                                    <ChoiceBox fx:id="choices" layoutX="121.0" layoutY="16.0" prefHeight="31.0" prefWidth="190.0" />
+                                    <Button fx:id="saveBtn" layoutX="123.0" layoutY="276.0" mnemonicParsing="false" onAction="#saveBtnPressed" text="Save" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="364.0" layoutY="56.0" prefHeight="25.0" prefWidth="63.0" text="Figure">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="488.0" layoutY="58.0" prefHeight="21.0" prefWidth="55.0" text="Animal">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="361.0" layoutY="209.0" text="Puzzle">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="475.0" layoutY="209.0" text="Board Game">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="toyClassfication" layoutX="352.0" layoutY="110.0" prefHeight="31.0" prefWidth="104.0" />
+                              <Label layoutX="352.0" layoutY="89.0" text="Classification" />
+                              <Label layoutX="480.0" layoutY="89.0" text="Material" />
+                              <TextField fx:id="toyMaterial" layoutX="478.0" layoutY="110.0" prefHeight="31.0" prefWidth="80.0" />
+                              <TextField fx:id="toySize" layoutX="477.0" layoutY="165.0" prefHeight="31.0" prefWidth="83.0" />
+                              <Label layoutX="476.0" layoutY="141.0" text="Size" />
+                              <Label layoutX="354.0" layoutY="244.0" text="Type" />
+                              <TextField fx:id="toyType" layoutX="392.0" layoutY="239.0" prefHeight="31.0" prefWidth="58.0" />
+                              <TextField fx:id="toyMin" layoutX="514.0" layoutY="239.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="toyMax" layoutX="515.0" layoutY="280.0" prefHeight="31.0" prefWidth="58.0" />
+                              <TextField fx:id="toyDesigners" layoutX="514.0" layoutY="317.0" prefHeight="31.0" prefWidth="60.0" />
+                              <Label layoutX="478.0" layoutY="244.0" text="min" />
+                              <Label layoutX="477.0" layoutY="285.0" text="max" />
+                              <Label layoutX="443.0" layoutY="322.0" text="designers" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Remove Toy">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="41.0" layoutY="35.0" text="Enter Serial Number" />
+                              <Label layoutX="41.0" layoutY="133.0" text="Serial Number" />
+                              <TextField fx:id="sNum2" layoutX="41.0" layoutY="165.0" />
+                              <Button fx:id="remove" layoutX="102.0" layoutY="263.0" mnemonicParsing="false" onAction="#removePress" text="Remove" />
+                              <TextArea fx:id="console2" layoutX="249.0" layoutY="14.0" prefHeight="331.0" prefWidth="343.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
